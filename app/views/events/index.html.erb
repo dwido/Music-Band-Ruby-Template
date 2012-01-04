@@ -1,0 +1,32 @@
+                					<% @events.each do |event| %>
+                						<tr>
+                	  						<td align="center"><%= event.title %><br>
+                    								<%= event.dateofevent %><br>
+                								<%= event.timeofevent %><br>
+                								<%= event.townstate %><br>
+                								<%= event.address %><br>
+                								<%= event.content %><br>
+                								<%= link_to 'show', event %>
+                								<%= link_to 'edit', edit_event_path(event) %><%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %></td>
+                  						</tr>
+                					<% end %>
+   <%= link_to 'New Event', new_event_path %>  
+<!-- table height="7000" cellspacing="0" cellpadding="0" align="center" width="80%" id="menuTable">
+	<tbody>
+		<tr height="648" style="BACKGROUND-IMAGE: url(images/bgsliceheader.gif);background-size: 100%;background-origin: content;BACKGROUND-REPEAT: no-repeat" id="trMain">
+		<td valign="top">
+						
+
+
+					</td>
+	</tr>
+	<tr verticalalign="top" style="BACKGROUND-IMAGE: url(images/Bgpartcontent.gif); BACKGROUND-REPEAT: repeat">
+		<td></td>
+	</tr>
+	<tr verticalalign="top" style="BACKGROUND-IMAGE: url(images/footer.gif); BACKGROUND-REPEAT: no-repeat">
+		<td></td>
+	</tr>
+</tbody></table -->
+
+
+

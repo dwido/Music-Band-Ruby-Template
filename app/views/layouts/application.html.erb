@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lea</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="background">
+    <div id="divContainer">
+        <header>
+        	<h1><a href="<%= root_url%>"></a></h1>
+        	<div class="clear"></div>
+            <nav>
+                <%= render_navigation %>
+            </nav>
+            <div class="head" style="POSITION: absolute; TOP: 250px; width:950px;text-align:center;">
+                <table border="0" width="100%">
+                	<tbody>
+                		<tr>
+                			<td align="center">
+                				<table border="0" width="500">
+                                    <%= yield %>
+                				</table>
+                			</td>
+                		</tr>
+                	</tbody>
+                </table>
+            </div>
+        </header>
+    </div>
+</div>
+
+</body>
+</html>

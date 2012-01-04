@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  dateofevent: 2011-12-30
+  timeofevent: 2011-12-30 15:07:39
+  townstate: MyString
+  address: MyString
+  content: MyString
+
+two:
+  title: MyString
+  dateofevent: 2011-12-30
+  timeofevent: 2011-12-30 15:07:39
+  townstate: MyString
+  address: MyString
+  content: MyString

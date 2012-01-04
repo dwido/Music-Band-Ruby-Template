@@ -1,0 +1,85 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325563039.7717729:@value{	I"length:EFiÿI"digest;
+F"%4a6587e532ec4b5240596325600b0f0cI"source;
+FI"ÿ/* line 1, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  /* background-image: url("/images/filler2.gif"); */
+  background-color: black;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 11, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 25, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 30, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 33, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 36, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 41, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 48, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 57, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+;
+FI"_version;
+F"%d14f35f751fa230cb05800ea79232600
