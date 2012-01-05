@@ -1,172 +1,69 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325626008.511971:@value{	I"length:EFiÆI"digest;
-F"%36e2fd548dc18037b618ffda19b05778I"source;
-FI"Æ/*
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325707719.031403:@value{	I"length:EFib
+I"digest;
+F"%a85ee53b29946ab9e3c956474b4c4051I"source;
+FI"b
+/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
 */
 
-ol, ul {
-    list-style: none outside none;
-}
-
-header nav {
-    left: 21px;
-    position: absolute;
-    top: 156px;
-    width: 950px;
-    z-index: 9999;
-}
-nav ul > li {
-    float: left;
-    margin-right: 2px;
-    position: relative;
-    text-align: center;
-}
-nav ul > li > a {
-    color: #FFFFFF;
-    cursor: pointer;
-    display: block;
-    font-size: 15px;
-    height: 45px;
-    line-height: 1.2em;
-    padding-top: 28px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    z-index: 2;
-}
-nav ul > li > span {
-    display: none;
-    height: 187px;
-    left: -43px;
-    position: absolute;
-    width: 216px;
-    z-index: 1;
-}
-nav ul > li:hover > a, nav ul > li#active > a {
-    color: #FB1D1D;
-}
-
-nav ul > li#active > span {
-    background: url("../images/menu-shine.png") no-repeat scroll left top transparent;
-    display: block;
-    top: -70px;
-}
-nav ul > li#main {
-    background: url("/images/main-buttom.jpg") no-repeat scroll left top transparent;
-    width: 131px;
-}
-nav ul > li#band {
-    background: url("/images/the-band-button.jpg") no-repeat scroll left top transparent;
-    width: 129px;
-}
-
-nav ul > li#audio {
-    background: url("/images/audio-button.jpg") no-repeat scroll left top transparent;
-    width: 129px;
-}
-
-nav {
-    display:block;
-}
-
-h1 a {
-    background: url("/images/logo.gif") no-repeat scroll left top transparent;
-    height: 139px;
-    left: 271px;
-    position: absolute;
-    top: 0;
-    width: 398px;
-}
-
-a{
-    border: 0 none;
-    outline: 0 none;
-    color: #D52D00;
-}
-
-#divContainer {
-    background: none repeat scroll 0 0 transparent;
-    font-size: 0.875em;
-    margin: 0 auto;
-    width: 980px;
-}
-
-.background {
-    background: url("/images/background.jpg") no-repeat scroll center top transparent;
-}
-
-header {
-    height: 607px;
-    position: relative;
-}
-
-header {
-    height: 232px;
-    position: relative;
-    z-index: 2;
-}
-
-.clear {
-    clear: both;
-}
-/* line 1, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 1, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 body {
   /* background-image: url("/images/filler2.gif"); */
-  background-color: black;
+  /*background-color: black;*/
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 11, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 11, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 16, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 16, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 21, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 21, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a {
   color: #000;
 }
-/* line 23, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 23, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a:visited {
   color: #666;
 }
-/* line 25, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 25, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a:hover {
   color: #fff;
   background-color: #000;
 }
 
-/* line 30, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 30, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 33, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 33, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #notice {
   color: green;
 }
 
-/* line 36, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 36, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 41, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 41, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -175,7 +72,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 48, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 48, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -186,11 +83,11 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 57, C:/Users/david.buchbut/Documents/ruby/LEA/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 57, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
 }
 ;
 FI"_version;
-F"%805c0c8c08e40551497bd18380dc2520
+F"%aa995d32c38fe3c18707975ad9b2278e
