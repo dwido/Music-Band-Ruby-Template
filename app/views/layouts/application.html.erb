@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lea</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+    <title>Ruby Layali El Andalus</title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
 </head>
 <body>
-<div class="background">
+<div class="container">
     <div id="divContainer">
-        <header>
-        	<h1><a href="<%= root_url%>"></a></h1>
-        	<div class="clear"></div>
-            <nav>
-                
-            </nav>
-            <div class="head" style="POSITION: absolute; TOP: 250px; width:950px;text-align:center;">
-                <table border="0" width="100%">
-                	<tbody>
-                		<tr>
-                			<td align="center">
-                				<table border="0" width="500">
-                                    <%= yield %>
-                				</table>
-                			</td>
-                		</tr>
-                	</tbody>
-                </table>
-            </div>
-        </header>
+        <%= render 'layouts/header' %>
+        <section class="round">
+	        <nav>
+	          <ul>
+	            <li><%= link_to "home", '..' %></li>
+	            <li><%= link_to "the band", bios_path %></li>
+	            <li><%= link_to "events", events_path %></li>
+	            <li><%= link_to "music", '..' %></li>
+	            <li><%= link_to "press", '..' %></li>
+	            <li><%= link_to "gallery", '..' %></li>
+	            <li><%= link_to "contact", '..' %></li>
+              </ul>
+	        </nav>
+        
+            <%= yield %>
+        </section>      
     </div>
 </div>
 

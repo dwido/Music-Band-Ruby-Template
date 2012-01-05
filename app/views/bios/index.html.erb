@@ -1,26 +1,15 @@
-<h1>Listing bios</h1>
-
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Content</th>
-    <th>Imagename</th>
-    <th>Url</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @bios.each do |bio| %>
   <tr>
-    <td><%= bio.name %></td>
-    <td><%= bio.content %></td>
-    <td><%= bio.imagename %></td>
-    <td><%= bio.url %></td>
-    <td><%= link_to 'Show', bio %></td>
-    <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
-    <td><%= link_to 'Destroy', bio, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+    <td>
+
+	    <h3><%= bio.name %></h3>
+	    <%= image_tag("/images/" + bio.imagename, :class => "round snaptoright", :width => '225', :height => '238') %>
+	    <p><%= bio.content %></p>
+	    <a target="_blank" href="<%= bio.url %>"><%= bio.url %></a>
+			<%= link_to 'Show', bio %>|<%= link_to 'Edit', edit_bio_path(bio) %>|<%= link_to 'Destroy', bio, confirm: 'Are you sure?', method: :delete %>
+	</td>
+ </tr>
 <% end %>
 </table>
 
