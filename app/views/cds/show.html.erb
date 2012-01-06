@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cd.name %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @cd.year %>
+</p>
+
+<p>
+  <b>Reviews:</b>
+  <%= @cd.reviews %>
+</p>
+ 
+<h2>Tracks</h2>
+<% @cd.tracks.each do |track| %> 
+  <p>
+    <b>order number:</b>
+    <%= track.order_number %>
+    <b>name:</b>
+    <%= track.name %>  
+  </p>
+<% end %>
+
+<h2>Add a track:</h2>
+<%= form_for([@cd, @cd.tracks.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ordernumber %><br />
+    <%= f.text_field :order_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_cd_path(@cd) %> |
+<%= link_to 'Back', cds_path %>

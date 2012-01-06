@@ -20,6 +20,8 @@ section {
   font-size: 13px;
   padding: 20px;
   background: #E8DABC;
+  height:500px;
+  overflow:auto;
 }
 
 section h1 {

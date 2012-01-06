@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @press.location %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @press.content %>
+</p>
+
+<p>
+  <b>Reviewer:</b>
+  <%= @press.reviewer %>
+</p>
+
+<p>
+  <b>Readmoreurl:</b>
+  <%= @press.readmoreurl %>
+</p>
+
+
+<%= link_to 'Edit', edit_press_path(@press) %> |
+<%= link_to 'Back', presses_path %>

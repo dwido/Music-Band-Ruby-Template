@@ -1,4 +1,17 @@
 Lea::Application.routes.draw do
+
+  resources :cds do
+    resources :tracks
+  end
+
+  get "pages/audio"
+
+  get "pages/video"
+
+  get "pages/contact"
+
+  resources :presses
+
   resources :microposts
 
   resources :users

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location: MyString
+  content: MyText
+  reviewer: MyString
+  readmoreurl: MyString
+
+two:
+  location: MyString
+  content: MyText
+  reviewer: MyString
+  readmoreurl: MyString

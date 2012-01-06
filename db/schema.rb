@@ -11,13 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120105215703) do
+ActiveRecord::Schema.define(:version => 20120106165416) do
 
   create_table "bios", :force => true do |t|
     t.string   "name"
     t.text     "content"
     t.string   "imagename"
     t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cds", :force => true do |t|
+    t.string   "name"
+    t.integer  "year"
+    t.text     "reviews"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,6 +47,25 @@ ActiveRecord::Schema.define(:version => 20120105215703) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "presses", :force => true do |t|
+    t.string   "location"
+    t.text     "content"
+    t.string   "reviewer"
+    t.string   "readmoreurl"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tracks", :force => true do |t|
+    t.string   "name"
+    t.integer  "order_number"
+    t.integer  "cd_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tracks", ["cd_id"], :name => "index_tracks_on_cd_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
