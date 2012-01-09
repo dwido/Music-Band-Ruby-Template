@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  width: 910px;
 }
 
 body {
@@ -11,7 +11,7 @@ header {
 }
 
 header img {
-  padding: 1em;
+  padding: 1em ;
   /*background: #fff;*/
 }
 
@@ -20,7 +20,7 @@ section {
   font-size: 13px;
   padding: 20px;
   background: #E8DABC;
-  height:500px;
+/*  height:500px; */
   overflow:auto;
 }
 
@@ -83,7 +83,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.5em 1em;
 }
 
 nav ul li a {
@@ -104,4 +104,35 @@ img.snaptoright {
     float: right;
     margin-left: 18px;
     padding: 5px;
+}
+
+.boxWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+div#feedsBox {
+    padding: 0;
+    position: relative;
+}
+
+div#feedsBox2 {
+    padding: 0;
+    position: relative;
+}
+
+div.innerBox {
+    margin:30px;
+}
+
+.col1 {
+    background: none repeat scroll 0 0 transparent;
+    border-right: 1px solid #000000;
+    margin-right: 28px;
+    padding-right: 28px;
+    width: 220px;
+}
+
+.col1, .col2, .col3{
+    float:left;
 }

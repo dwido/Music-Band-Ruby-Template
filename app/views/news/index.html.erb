@@ -1,0 +1,25 @@
+<h1>Listing news</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @news.each do |news| %>
+  <tr>
+    <td><%= news.date %></td>
+    <td><%= news.content %></td>
+    <td><%= link_to 'Show', news %></td>
+    <td><%= link_to 'Edit', edit_news_path(news) %></td>
+    <td><%= link_to 'Destroy', news, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New News', new_news_path %>

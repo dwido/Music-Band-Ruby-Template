@@ -1,5 +1,7 @@
 Lea::Application.routes.draw do
 
+  resources :news
+
   resources :cds do
     resources :tracks
   end

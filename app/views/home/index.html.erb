@@ -1,3 +1,112 @@
-<h1>Welcome to Layali El Andalus Home Page</h1>
-<p>lalala</p>
-<%= link_to "Join our mailing list!", '#', :class => "signup_button round" %>
+<%= stylesheet_link_tag '/coin-slider/coin-slider-styles.css', :media => 'screen' %>
+<script src="/coin-slider/coin-slider.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/initgallery.js" type="text/javascript" charset="utf-8"></script>
+
+<div id='coin-slider'>
+<a href="img01_url" target="_blank">
+    <img src='/images/main/1.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/2.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/3.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/4.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/5.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/6.jpg' >
+</a>
+<a href="imgN_url">
+    <img src='/images/main/7.jpg' >
+</a>
+</div>
+
+<div class="boxWrapper">
+    <div id="feedsBox">
+        <div class="innerBox boxWrapper" >
+            <article class="col1">
+                <h2>Latest News</h2>
+                <ul>
+                    <% @news.each do |news| %>
+                        <li>
+                            <span><%= news.date%></span>
+                            <p>
+                                <%= news.content%>
+                            </p>
+                        </li>                        
+                    <% end %>
+                </ul>
+            </article>
+            <article class="col1">
+                <h2>Tour Dates</h2>
+                <ul>
+                    <% @events.each do |event| %>
+                        <li>
+                            <span><%= event.dateofevent%></span>&nbsp;<span><%= event.title%></span>
+                            <p>
+                                <%= event.townstate%>
+                            </p>
+                        </li>                        
+                    <% end %>
+                </ul>
+            </article>
+            <article class="col1">
+                <h2>In Stores Now</h2>
+                <ul>
+                    <% @cds.each do |cd| %>
+                        <li>
+                            <span><%= cd.name%></span>
+                        </li>                        
+                    <% end %>
+                </ul>
+            </article>
+            
+        </div>
+    </div>
+</div>
+
+<div class="boxWrapper">
+    <div id="feedsBoxBottom">
+        <div class="innerBox boxWrapper" >
+            <article class="col1">
+                <h2>From the blog</h2>
+                <ul>
+                    <li>
+                        <span>Date</span>
+                        <p>
+                            Lorem Ipsum
+                        </p>
+                    </li>
+                    <li>
+                        <span>Date</span>
+                        <p>
+                            Lorem Ipsum
+                        </p>
+                    </li>
+                    <li>
+                        <span>Date</span>
+                        <p>
+                            Lorem Ipsum
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article class="col1">
+                <h2>Latest Video</h2>
+                <iframe width="210" height="157" src="http://www.youtube.com/embed/B3bNXpf0ZNk" frameborder="0" allowfullscreen></iframe>
+            </article>
+            <article class="col1">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="http://www.rachidhalihalmusic.com">http://www.rachidhalihalmusic.com</a></li>
+                </ul>
+            </article>
+            
+        </div>
+    </div>
+</div>

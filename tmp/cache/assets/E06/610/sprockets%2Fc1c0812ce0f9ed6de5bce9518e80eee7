@@ -1,61 +1,60 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325707648.921393:@value{	I"length:EFi'	I"digest;
-F"%345dfe3c119743d0fc635e5f7d1ef59aI"source;
-FI"'	/* line 1, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325985909.808864:@value{	I"length:EFiëI"digest;
+F"%4c0031a612216660744e5655fcaf4e0aI"source;
+FI"ë/* line 1, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 body {
-  /* background-image: url("/images/filler2.gif"); */
-  /*background-color: black;*/
+  background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 11, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 8, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 16, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 13, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 21, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 18, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a {
   color: #000;
 }
-/* line 23, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 20, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a:visited {
   color: #666;
 }
-/* line 25, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 22, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 a:hover {
   color: #fff;
   background-color: #000;
 }
 
-/* line 30, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 27, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 33, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 30, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #notice {
   color: green;
 }
 
-/* line 36, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 33, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 41, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 38, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -64,7 +63,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 48, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 45, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -75,11 +74,11 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 57, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
+/* line 54, C:/Users/david.buchbut/Documents/ruby/Layali/lea/app/assets/stylesheets/scaffolds.css.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
 }
 ;
 FI"_version;
-F"%a18e146ff7f19bf81197fd905d747ecd
+F"%fb5c7ae66bc4dc02b65f20dc629a1179

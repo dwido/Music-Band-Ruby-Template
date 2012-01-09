@@ -1,2 +1,23 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<h2>Bookings</h2>
+
+David Buchbut: (201) 284-0560
+<br>
+????   Rachid Halihal: (917) 531-4159
+<br>
+info@layalielandalus.com
+<br><br><br>
+<h2>Join our mailing List</h2>
+<%= form_for @user do |f| %>
+    <table cellspacing=0 cellpadding=0 style="width:20px">
+        <tr>
+            <td><%= f.label :name %></td>
+            <td><%= f.label :email %></td>
+        </tr>
+        <tr>
+            <td><%= f.text_field :name %></td><td><%= f.text_field :email %></td>
+        </tr>
+    </table>
+  <div class="actions">
+    <%= f.submit "Join", :class => "signup_button round" %>
+  </div>
+<% end %>

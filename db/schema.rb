@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106165416) do
+ActiveRecord::Schema.define(:version => 20120108213243) do
 
   create_table "bios", :force => true do |t|
     t.string   "name"
@@ -44,6 +44,13 @@ ActiveRecord::Schema.define(:version => 20120106165416) do
   create_table "microposts", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news", :force => true do |t|
+    t.date     "date"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
