@@ -3,7 +3,7 @@ class BiosController < ApplicationController
   # GET /bios.json
   def index
     @bios = Bio.all
-
+    @title = "The Band"
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @bios }

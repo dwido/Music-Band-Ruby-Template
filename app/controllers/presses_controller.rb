@@ -3,7 +3,8 @@ class PressesController < ApplicationController
   # GET /presses.json
   def index
     @presses = Press.all
-
+    @title = "Press"
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @presses }
