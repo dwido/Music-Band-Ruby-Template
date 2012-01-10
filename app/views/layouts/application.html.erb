@@ -22,6 +22,11 @@
 	            <li><%= link_to "contact", '/pages/contact' %></li>
               </ul>
 	        </nav>
+
+            <% flash.each do |key, value| %>
+              <div class="flash <%= key %>"><%= value %></div>
+            <% end %>
+
             <%= yield %>
         </section>      
     </div>
