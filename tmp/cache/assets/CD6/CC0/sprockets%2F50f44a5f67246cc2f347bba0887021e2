@@ -1,0 +1,8 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1326209920.089702:@value{	I"length:EFiÚI"digest;
+F"%174bdbf826ff2d0032193f732a6a95faI"source;
+FI"ÚCufon.replace('nav ul li a', { fontFamily: 'LondonBetween', hover:true });
+Cufon.replace('h2', { fontFamily: 'LondonBetween', hover:true });
+Cufon.replace('.list li span', { fontFamily: 'LondonBetween', hover:true });
+;
+FI"_version;
+F"%65a8db867c939c3200966e9a14769c5f
