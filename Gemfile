@@ -7,6 +7,8 @@ gem 'rails', '3.1.3'
 
 gem 'sqlite3'
 
+gem 'pg'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
