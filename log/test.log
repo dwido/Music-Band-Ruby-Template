@@ -311,3 +311,195 @@ Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
   [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('dwidob', 'dwidob@gmail.com', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 561806425)[0m
   [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('Dwido', 'jagu@yahoo.com', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 561806425]]
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 281ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (31.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "b5167704333fa1b42c31028f4d978f5e1571aaf918562f245d0d7dd82748c492"], ["name", "Michael Hartl"], ["salt", "078692c322df9b8093d490d6724297d62e8c5d4a32b1d0a999a158c434ba8bd1"], ["updated_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "b5167704333fa1b42c31028f4d978f5e1571aaf918562f245d0d7dd82748c492"], ["name", "Michael Hartl"], ["salt", "078692c322df9b8093d490d6724297d62e8c5d4a32b1d0a999a158c434ba8bd1"], ["updated_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "b5167704333fa1b42c31028f4d978f5e1571aaf918562f245d0d7dd82748c492"], ["name", "Michael Hartl"], ["salt", "078692c322df9b8093d490d6724297d62e8c5d4a32b1d0a999a158c434ba8bd1"], ["updated_at", Fri, 13 Jan 2012 19:19:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "e2a78ae5a72dd28fc0761f2602cdc16a318fffdee84bb2a44d6e8a14144226dc"], ["name", "Michael Hartl"], ["salt", "f65e22e0488d7e172e6734e1097ca9efaf9cb5b1c4e9ad67302af5453f510d11"], ["updated_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/edit.html.erb within layouts/application (156.3ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 344ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (15.6ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "e2a78ae5a72dd28fc0761f2602cdc16a318fffdee84bb2a44d6e8a14144226dc"], ["name", "Michael Hartl"], ["salt", "f65e22e0488d7e172e6734e1097ca9efaf9cb5b1c4e9ad67302af5453f510d11"], ["updated_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "e2a78ae5a72dd28fc0761f2602cdc16a318fffdee84bb2a44d6e8a14144226dc"], ["name", "Michael Hartl"], ["salt", "f65e22e0488d7e172e6734e1097ca9efaf9cb5b1c4e9ad67302af5453f510d11"], ["updated_at", Fri, 13 Jan 2012 19:23:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:30:06 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "6012e2bb1aa44c4afcb10435888dc8a422672f5c0d04a1c8645008bf69256b9f"], ["name", "Michael Hartl"], ["salt", "bdeb778ac35e981714f2e0b786cc3db72d3c873bedd77f50e862c9a420259a3d"], ["updated_at", Fri, 13 Jan 2012 19:30:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/edit.html.erb within layouts/application (140.6ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 359ms (Views: 359.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:30:07 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "982d528ced7dee4cb891ef5c5e2eb20e68bef725a8ba178f859b7a2b24f75778"], ["name", "Michael Hartl"], ["salt", "4c73e4e6835b35a64f9989c13425c1a98cfd5b52963a6e8f44ee04a64d9e77b0"], ["updated_at", Fri, 13 Jan 2012 19:30:07 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:30:07 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "982d528ced7dee4cb891ef5c5e2eb20e68bef725a8ba178f859b7a2b24f75778"], ["name", "Michael Hartl"], ["salt", "4c73e4e6835b35a64f9989c13425c1a98cfd5b52963a6e8f44ee04a64d9e77b0"], ["updated_at", Fri, 13 Jan 2012 19:30:07 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "f116aa726c9b91be781119a1e289a2dd4c11a7d01812eee68c568ebd7aa3200d"], ["name", "Michael Hartl"], ["salt", "13b65084d66e57e59406de5a6bd72bc20891eb4c153eeaae98785da5d1b14872"], ["updated_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/edit.html.erb within layouts/application (109.4ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 312ms (Views: 312.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "f116aa726c9b91be781119a1e289a2dd4c11a7d01812eee68c568ebd7aa3200d"], ["name", "Michael Hartl"], ["salt", "13b65084d66e57e59406de5a6bd72bc20891eb4c153eeaae98785da5d1b14872"], ["updated_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "f116aa726c9b91be781119a1e289a2dd4c11a7d01812eee68c568ebd7aa3200d"], ["name", "Michael Hartl"], ["salt", "13b65084d66e57e59406de5a6bd72bc20891eb4c153eeaae98785da5d1b14872"], ["updated_at", Fri, 13 Jan 2012 19:31:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:34:04 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "331953725157d2bb5c30d09f4f5dca5ecad3493b33faf553de7ed0166844f3e9"], ["name", "Michael Hartl"], ["salt", "d6a6ac565718f1cd9ae277540eb6c8da5911a5a5ff602bf08108e1d3f08fe9d5"], ["updated_at", Fri, 13 Jan 2012 19:34:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/edit.html.erb within layouts/application (93.7ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 297ms (Views: 296.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:34:05 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "0779ac2d88750e9881022ee9576916e76f5d66403f0e6825cab82ab317df3545"], ["name", "Michael Hartl"], ["salt", "9b718f7da105b304308ba0e04fc498038368df8e08acddfb800da5cdb5866d49"], ["updated_at", Fri, 13 Jan 2012 19:34:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+Binary data inserted for `string` type on column `salt`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jan 2012 19:34:05 UTC +00:00], ["email", "mhartl@example.com"], ["encrypted_password", "0779ac2d88750e9881022ee9576916e76f5d66403f0e6825cab82ab317df3545"], ["name", "Michael Hartl"], ["salt", "9b718f7da105b304308ba0e04fc498038368df8e08acddfb800da5cdb5866d49"], ["updated_at", Fri, 13 Jan 2012 19:34:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "980190963"]]
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 47ms (Views: 31.2ms | ActiveRecord: 0.0ms)
