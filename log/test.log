@@ -238,3 +238,76 @@ Completed 200 OK in 196ms (Views: 196.0ms | ActiveRecord: 0.0ms)
 Rendered layouts/_stylesheets.html.erb (1.0ms)
 Rendered layouts/_header.html.erb (0.0ms)
 Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "bios"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "cds"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "microposts"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "news"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "presses"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "tracks"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('lilu', 'li@la.col', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('Dwido', 'jagu@yahoo.com', '2012-01-13 16:28:13', '2012-01-13 16:28:13', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "bios"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "cds"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "microposts"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "news"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "presses"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)[0m
+  [1m[35mFixture Insert (15.6ms)[0m  INSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "tracks"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('lilu', 'li@la.col', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('Dwido', 'jagu@yahoo.com', '2012-01-13 16:32:41', '2012-01-13 16:32:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "bios"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "bios" ("name", "content", "imagename", "url", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "cds"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "cds" ("name", "year", "reviews", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyText', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "events"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "events" ("title", "dateofevent", "timeofevent", "townstate", "address", "content", "created_at", "updated_at", "id") VALUES ('MyString', '2011-12-30', '2011-12-30 15:07:39.000000', 'MyString', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "microposts"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "news"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "news" ("date", "content", "created_at", "updated_at", "id") VALUES ('2012-01-08', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "presses"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "presses" ("location", "content", "reviewer", "readmoreurl", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 'MyString', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "tracks"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:34:45', '2012-01-13 16:34:45', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "tracks" ("name", "order_number", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('dwidob', 'dwidob@gmail.com', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 561806425)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('Dwido', 'jagu@yahoo.com', '2012-01-13 16:34:45', '2012-01-13 16:34:45', 298486374)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 561806425]]

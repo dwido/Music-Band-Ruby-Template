@@ -98121,3 +98121,734 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-12 21:52:43 -0500
 Served asset /bios.js - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEvents (20111230200739)
+Migrating to CreateBios (20120103191010)
+Migrating to CreateUsers (20120105214540)
+Migrating to CreateMicroposts (20120105215703)
+Migrating to CreatePresses (20120106020135)
+Migrating to CreateCds (20120106162410)
+Migrating to CreateTracks (20120106165416)
+Migrating to CreateNews (20120108213243)
+Migrating to AddEmailUniquenessIndex (20120109181810)
+Migrating to AddPasswordToUsers (20120109213632)
+Migrating to AddSaltToUsers (20120109214850)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("bios")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("cds")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("microposts")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("news")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("presses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tracks")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_tracks_on_cd_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-13 10:49:11 -0500
+  Processing by HomeController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" LIMIT 3[0m
+  [1m[35mEvent Load (15.7ms)[0m  SELECT "events".* FROM "events" LIMIT 3
+  [1m[36mCd Load (0.0ms)[0m  [1mSELECT "cds".* FROM "cds" LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (125.3ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Compiled application.js  (93ms)  (pid 848)
+Compiled jquery.js  (62ms)  (pid 848)
+Compiled jquery_ujs.js  (15ms)  (pid 848)
+Compiled cufon-yui.js  (15ms)  (pid 848)
+Compiled LondonBetween_500.font.js  (15ms)  (pid 848)
+Compiled cofuninit.js  (46ms)  (pid 848)
+Compiled bios.js  (704ms)  (pid 848)
+Compiled cds.js  (297ms)  (pid 848)
+Compiled events.js  (266ms)  (pid 848)
+Compiled home.js  (297ms)  (pid 848)
+Compiled microposts.js  (266ms)  (pid 848)
+Compiled news.js  (281ms)  (pid 848)
+Compiled pages.js  (297ms)  (pid 848)
+Compiled presses.js  (281ms)  (pid 848)
+Compiled sessions.js  (297ms)  (pid 848)
+Compiled tracks.js  (281ms)  (pid 848)
+Compiled users.js  (297ms)  (pid 848)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (187.9ms)
+Completed 200 OK in 6169ms (Views: 5746.6ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /cufon-yui.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /news.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /pages.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /sessions.js - 200 OK (31ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /tracks.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 10:49:20 -0500
+Served asset /users.js - 304 Not Modified (15ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (15.6ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+  [1m[35mUser Load (15.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 78ms (Views: 62.5ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 10:56:52 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new/9" for 127.0.0.1 at 2012-01-13 10:57:21 -0500
+
+ActionController::RoutingError (No route matches [GET] "/users/new/9"):
+  
+
+Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/9/edit" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 0ms
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (31.3ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 10:57:29 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ox7VY3CQRdrB7yLF85YEEsxkyJCBvQumVQP6NGbwxFs=", "session"=>{"email"=>"dwidob@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dwidob@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 203ms
+
+
+Started GET "/users/9" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "9"]]
+Rendered users/show.html.erb within layouts/application (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:39 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/9/edit" for 127.0.0.1 at 2012-01-13 11:08:43 -0500
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1
+Rendered shared/_error_messages.html.erb (0.0ms)
+Rendered users/edit.html.erb within layouts/application (0.0ms)
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:44 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/10/edit" for 127.0.0.1 at 2012-01-13 11:08:51 -0500
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=10):
+  app/controllers/users_controller.rb:89:in `correct_user'
+
+Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/users/8/edit" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "8"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+  Processing by HomeController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" LIMIT 3[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" LIMIT 3
+  [1m[36mCd Load (0.0ms)[0m  [1mSELECT "cds".* FROM "cds" LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (0.0ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+Rendered layouts/_header.html.erb (31.3ms)
+Completed 200 OK in 125ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 11:08:57 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/8/edit" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "8"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+  Processing by HomeController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" LIMIT 3[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" LIMIT 3
+  [1m[36mCd Load (0.0ms)[0m  [1mSELECT "cds".* FROM "cds" LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+Rendered layouts/_header.html.erb (62.5ms)
+Completed 200 OK in 125ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /pages.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 11:09:09 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (78.1ms)[0m  CREATE TABLE "bios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "content" text, "imagename" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (78.1ms)[0m  [1mCREATE TABLE "cds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "year" integer, "reviews" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (93.8ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "dateofevent" date, "timeofevent" time, "townstate" varchar(255), "address" varchar(255), "content" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (93.8ms)[0m  [1mCREATE TABLE "microposts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (203.1ms)[0m  CREATE TABLE "news" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "content" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (93.8ms)[0m  [1mCREATE TABLE "presses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar(255), "content" text, "reviewer" varchar(255), "readmoreurl" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (93.8ms)[0m  CREATE TABLE "tracks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "order_number" integer, "cd_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tracks")[0m
+  [1m[35m (78.1ms)[0m  CREATE INDEX "index_tracks_on_cd_id" ON "tracks" ("cd_id")
+  [1m[36m (93.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (78.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (93.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (93.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (93.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120109214850')
+  [1m[36m (93.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111230200739')[0m
+  [1m[35m (93.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120103191010')
+  [1m[36m (125.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105214540')[0m
+  [1m[35m (93.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105215703')
+  [1m[36m (109.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120106020135')[0m
+  [1m[35m (93.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120106162410')
+  [1m[36m (93.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120106165416')[0m
+  [1m[35m (109.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108213243')
+  [1m[36m (93.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120109181810')[0m
+  [1m[35m (109.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120109213632')
+
+
+Started GET "/users/9" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Rendered users/show.html.erb within layouts/application (0.0ms)
+Rendered layouts/_stylesheets.html.erb (15.6ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cofuninit.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /cofuninit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cds.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /cds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/presses.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /presses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /cufon-yui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/LondonBetween_500.font.js?body=1" for 127.0.0.1 at 2012-01-13 11:33:40 -0500
+Served asset /LondonBetween_500.font.js - 304 Not Modified (0ms)

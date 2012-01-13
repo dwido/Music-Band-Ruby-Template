@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: lilu
-  email: li@la.col
+dwidob:
+  name: dwidob
+  email: dwidob@gmail.com
 
 two:
   name: Dwido
