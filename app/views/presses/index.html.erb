@@ -4,10 +4,14 @@
     <strong><%= press.reviewer %></strong>
     <p><a href="<%= press.readmoreurl %>"><%= press.readmoreurl %></a></p>
     <p>
-    <%= link_to 'Show', press %><%= link_to 'Edit', edit_press_path(press) %><%= link_to 'Destroy', press, confirm: 'Are you sure?', method: :delete %>
+    <% if current_user.admin? %>
+      <%= link_to 'Show', press %>|<%= link_to 'Edit', edit_press_path(press) %>|<%= link_to 'Destroy', press, confirm: 'Are you sure?', method: :delete %>
+    <% end %>
     </p>
 <% end %>
 
 <br />
 
-<%= link_to 'New Press', new_press_path %>
+    <% if current_user.admin? %>
+      <%= link_to 'New Press', new_press_path %>
+    <% end %>

@@ -6,11 +6,15 @@
                 								<%= event.townstate %><br>
                 								<%= event.address %><br>
                 								<%= event.content %><br>
-                								<%= link_to 'show', event %>
-                								<%= link_to 'edit', edit_event_path(event) %><%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %></td>
-                  						</tr>
+                            <% if current_user.admin? %>
+                  								<%= link_to 'show', event %>|
+                  								<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %></td>
+                    						</tr>
+                  					<% end %>
                 					<% end %>
-   <%= link_to 'New Event', new_event_path %>  
+                          <% if current_user.admin?
+                            link_to 'New Event', new_event_path
+              					   end %>
 <!-- table height="7000" cellspacing="0" cellpadding="0" align="center" width="80%" id="menuTable">
 	<tbody>
 		<tr height="648" style="BACKGROUND-IMAGE: url(images/bgsliceheader.gif);background-size: 100%;background-origin: content;BACKGROUND-REPEAT: no-repeat" id="trMain">

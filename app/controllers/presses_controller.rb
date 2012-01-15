@@ -1,4 +1,5 @@
 class PressesController < ApplicationController
+  before_filter :authenticate, :only => [:edit, :update]
   # GET /presses
   # GET /presses.json
   def index
@@ -81,4 +82,10 @@ class PressesController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  private
+  
+    def authenticate
+      deny_access unless signed_in?
+    end
 end

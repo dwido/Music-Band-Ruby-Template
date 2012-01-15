@@ -1,4 +1,5 @@
 class CdsController < ApplicationController
+  before_filter :authenticate, :only => [:index, :edit, :update]
   # GET /cds
   # GET /cds.json
   def index
@@ -80,4 +81,10 @@ class CdsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  private
+  
+    def authenticate
+      deny_access unless signed_in?
+    end
 end
