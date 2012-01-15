@@ -2,8 +2,6 @@
     	<%= image_tag("/images/logo.png", :alt => "Logo", :class => "round", :width => '200') %>
       <% if signed_in? %>
       <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-      <% else %>
-      <li><%= link_to "Sign in", signin_path %></li>
       <% end %>
       <% if signed_in? %>
       <li><%= link_to "Profile", current_user %></li>

@@ -6,13 +6,13 @@
                 								<%= event.townstate %><br>
                 								<%= event.address %><br>
                 								<%= event.content %><br>
-                            <% if current_user.admin? %>
+                            <% if current_user && current_user.admin? %>
                   								<%= link_to 'show', event %>|
                   								<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %></td>
                     						</tr>
                   					<% end %>
                 					<% end %>
-                          <% if current_user.admin?
+                          <% if current_user && current_user.admin?
                             link_to 'New Event', new_event_path
               					   end %>
 <!-- table height="7000" cellspacing="0" cellpadding="0" align="center" width="80%" id="menuTable">
