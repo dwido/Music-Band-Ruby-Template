@@ -1,3 +1,6 @@
-<% @app_images.each do |app_image| %>
-  <img src="<%= app_image.url%>">
+<% @galleries.each do |gallery| %>
+  <h2><%= gallery.name%></h2>
+  <% gallery.app_images.each do |app_image| %>
+    <a href="<%= app_image.url%>" rel="prettyPhoto[<%= app_image.gallery.name%>]" title="You can add caption to pictures."><img src="<%= app_image.url%>" width="60" height="60" alt="Red round shape" /></a>
+  <% end %>
 <% end %>

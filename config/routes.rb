@@ -1,5 +1,9 @@
 Lea::Application.routes.draw do
 
+  resources :galleries do
+    resources :app_images  
+  end
+
   resources :images
 
   resources :news
@@ -19,8 +23,6 @@ Lea::Application.routes.draw do
   resources :presses
 
   resources :microposts
-
-  resources :app_images
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]

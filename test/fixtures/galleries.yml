@@ -1,11 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  url: MyString
-  main_screen: false
-  gallery: 
+  name: MyString
 
 two:
-  url: MyString
-  main_screen: false
-  gallery: 
+  name: MyString

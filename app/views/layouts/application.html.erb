@@ -4,7 +4,9 @@
     <title><%= title %></title>
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
+    <%= yield :stylesheets %>
     <%= javascript_include_tag "application" %>
+    <%= yield :javascript %>
 </head>
 <body data-controller="<%= controller_name %>" >
 <div class="container">

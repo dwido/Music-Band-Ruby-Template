@@ -14,6 +14,7 @@ class PagesController < ApplicationController
 
   def gallery
     @title = "Gallery"
+    @galleries = Gallery.all
     @app_images = AppImage.where(:main_screen => false);
   end
 

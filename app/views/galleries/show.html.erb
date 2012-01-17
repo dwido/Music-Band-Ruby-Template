@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @gallery.name %>
+</p>
+
+<h2>Images</h2>
+<% @gallery.app_images.each do |app_image| %>
+  <p>
+    <b>Url:</b>
+    <%= app_image.url%>
+
+    <b>Main Screen:</b>
+    <%= app_image.main_screen %>
+    <%= link_to 'Destroy Image', [app_image.gallery, app_image],
+                 :confirm => 'Are you sure?',
+                 :method => :delete %>  </p>
+<% end %>
+
+<h2>Add an image:</h2>
+<%= form_for([@gallery, @gallery.app_images.build]) do |f| %>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :main_screen %><br />
+    <%= f.check_box :main_screen %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>

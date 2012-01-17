@@ -11,14 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120116175744) do
+ActiveRecord::Schema.define(:version => 20120117190944) do
 
   create_table "app_images", :force => true do |t|
     t.string   "url"
     t.boolean  "main_screen"
+    t.integer  "gallery_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "app_images", ["gallery_id"], :name => "index_app_images_on_gallery_id"
 
   create_table "bios", :force => true do |t|
     t.string   "name"
@@ -44,6 +47,12 @@ ActiveRecord::Schema.define(:version => 20120116175744) do
     t.string   "townstate"
     t.string   "address"
     t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "galleries", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
