@@ -21,7 +21,12 @@
     <b>order number:</b>
     <%= track.order_number %>
     <b>name:</b>
-    <%= track.name %>  
+    <%= track.name %>&nbsp;&nbsp;&nbsp;
+    <% if current_user.admin?  %>
+      [<%= link_to 'remove track', [track.cd, track],
+                 :confirm => 'Are you sure?',
+                 :method => :delete %>]
+    <% end %>
   </p>
 <% end %>
 
@@ -40,5 +45,7 @@
   </div>
 <% end %>
 
-<%= link_to 'Edit', edit_cd_path(@cd) %> |
-<%= link_to 'Back', cds_path %>
+<% if current_user.admin?  %>
+  <%= link_to 'Edit', edit_cd_path(@cd) %> |
+  <%= link_to 'Back', cds_path %>
+<% end %>

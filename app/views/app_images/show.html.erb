@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @app_image.url %>
+</p>
+
+<p>
+  <b>Main screen:</b>
+  <%= @app_image.main_screen %>
+</p>
+
+
+<%= link_to 'Edit', edit_app_image_path(@app_image) %> |
+<%= link_to 'Back', app_images_path %>

@@ -3,25 +3,31 @@
 <script src="/javascripts/initgallery.js" type="text/javascript" charset="utf-8"></script>
 
 <div id='coin-slider'>
-  <a href="imgN_url"><img src='/images/main/001.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/002.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/003.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/004.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/005.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/006.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/007.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/008.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/009.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/010.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/011.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/012.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/013.jpg' ></a>
-  <a href="imgN_url"><img src='/images/main/014.jpg' ></a>
+  <% @main_images.each do |main_image| %>
+    <a><img src='<%= main_image.url %>' ></a>
+  <% end %>
 </div>
 
 <div class="boxWrapper">
     <div id="feedsBox">
         <div class="innerBox boxWrapper" >
+            <article class="col1">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <% @events.each do |event| %>
+                        <li>
+                            <span><%= event.dateofevent%></span>&nbsp;<span><%= event.title%></span>
+                            <p>
+                                <%= event.townstate%>
+                            </p>
+                        </li>                        
+                    <% end %>
+                </ul>
+            </article>
+            <article class="col1">
+                <h2>Latest Video</h2>
+                <iframe width="170" height="157" src="http://www.youtube.com/embed/B3bNXpf0ZNk" frameborder="0" allowfullscreen></iframe>
+            </article>
             <article class="col1">
                 <h2>Latest News</h2>
                 <ul>
@@ -35,68 +41,14 @@
                     <% end %>
                 </ul>
             </article>
-            <article class="col1">
-                <h2>Tour Dates</h2>
-                <ul>
-                    <% @events.each do |event| %>
-                        <li>
-                            <span><%= event.dateofevent%></span>&nbsp;<span><%= event.title%></span>
-                            <p>
-                                <%= event.townstate%>
-                            </p>
-                        </li>                        
-                    <% end %>
-                </ul>
-            </article>
-            <article class="col1">
-                <h2>In Stores Now</h2>
+            <article class="col2">
+                <h2>Store</h2>
                 <ul>
                     <% @cds.each do |cd| %>
                         <li>
                             <span><%= cd.name%></span>
                         </li>                        
                     <% end %>
-                </ul>
-            </article>
-            
-        </div>
-    </div>
-</div>
-
-<div class="boxWrapper">
-    <div id="feedsBoxBottom">
-        <div class="innerBox boxWrapper" >
-            <article class="col1">
-                <h2>From the blog</h2>
-                <ul>
-                    <li>
-                        <span>Date</span>
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                    </li>
-                    <li>
-                        <span>Date</span>
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                    </li>
-                    <li>
-                        <span>Date</span>
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                    </li>
-                </ul>
-            </article>
-            <article class="col1">
-                <h2>Latest Video</h2>
-                <iframe width="210" height="157" src="http://www.youtube.com/embed/B3bNXpf0ZNk" frameborder="0" allowfullscreen></iframe>
-            </article>
-            <article class="col1">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="http://www.rachidhalihalmusic.com">http://www.rachidhalihalmusic.com</a></li>
                 </ul>
             </article>
             

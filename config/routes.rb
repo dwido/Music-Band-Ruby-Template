@@ -1,5 +1,7 @@
 Lea::Application.routes.draw do
 
+  resources :images
+
   resources :news
 
   resources :cds do
@@ -12,9 +14,13 @@ Lea::Application.routes.draw do
 
   get "pages/contact"
 
+  get "pages/gallery"
+
   resources :presses
 
   resources :microposts
+
+  resources :app_images
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]

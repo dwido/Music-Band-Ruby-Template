@@ -14,7 +14,9 @@
 </div>
 
 <p>
-<%= link_to 'Show', cd %>|<%= link_to 'Edit', edit_cd_path(cd) %>|<%= link_to 'Destroy', cd, confirm: 'Are you sure?', method: :delete %>
+    <% if current_user && current_user.admin?  %>
+      <%= link_to 'Show', cd %>|<%= link_to 'Edit', edit_cd_path(cd) %>|<%= link_to 'Destroy', cd, confirm: 'Are you sure?', method: :delete %>
+    <% end %>
 </p>
 
 <% end %>
