@@ -3,6 +3,8 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Main Screen</th>
+    <th>Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +13,8 @@
 <% @galleries.each do |gallery| %>
   <tr>
     <td><%= gallery.name %></td>
+    <td><%= gallery.main_screen %></td>
+    <td><%= gallery.description %></td>
     <td><%= link_to 'Show', gallery %></td>
     <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
     <td><%= link_to 'Destroy', gallery, confirm: 'Are you sure?', method: :delete %></td>

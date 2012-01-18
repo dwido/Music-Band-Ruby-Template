@@ -3,8 +3,10 @@
 <script src="/javascripts/initgallery.js" type="text/javascript" charset="utf-8"></script>
 
 <div id='coin-slider'>
-  <% @main_images.each do |main_image| %>
-    <a><img src='<%= main_image.url %>' ></a>
+  <% if @gallery !=nil %>
+    <% @gallery.app_images.each do |main_image| %>
+      <a><img src='<%= main_image.url %>' ></a>
+    <% end %>
   <% end %>
 </div>
 
