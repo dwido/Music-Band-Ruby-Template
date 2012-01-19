@@ -1,5 +1,7 @@
 Lea::Application.routes.draw do
 
+  resources :fans
+
   resources :galleries do
     resources :app_images  
   end

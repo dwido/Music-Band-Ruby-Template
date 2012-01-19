@@ -83,7 +83,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.2em 0.5em;
 }
 
 nav ul li a {
