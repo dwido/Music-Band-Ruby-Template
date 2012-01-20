@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @user = User.new
+    @fan = Fan.new
     @title = "Contact"
   end
 

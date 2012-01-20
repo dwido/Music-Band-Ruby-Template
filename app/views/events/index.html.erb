@@ -1,20 +1,26 @@
-                					<% @events.each do |event| %>
-                						<tr>
-                	  						<td align="center"><%= event.title %><br>
-                    								<%= event.dateofevent %><br>
-                								<%= event.timeofevent %><br>
-                								<%= event.townstate %><br>
-                								<%= event.address %><br>
-                								<%= event.content %><br>
-                            <% if current_user && current_user.admin? %>
-                  								<%= link_to 'show', event %>|
-                  								<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %></td>
-                    						</tr>
-                  					<% end %>
-                					<% end %>
-                          <% if current_user && current_user.admin?
-                            link_to 'New Event', new_event_path
-              					   end %>
+  <br>
+  <h2>Upcoming Shows</h2>
+
+  <% @events.each do |event| %>
+  	<tr>
+  		<td align="center">
+  		  <h4><%= event.dateofevent.strftime("%A, %B %dnd, %Y") %></h4>
+  		  <h3><%= event.title %></h3>
+  		  <h3>Layali El Andalus</h3>
+  			<h4><%= event.townstate %></h4>
+  			<h4><%= event.address %></h4>
+  			<h4><%= event.timeofevent.strftime("%I") %><% if event.timeofevent.min != 0%><%= event.timeofevent.strftime(":%M") %><% end %><%= event.timeofevent.strftime("%p") %>
+  			<%= event.content %><br></h4>
+        <% if current_user && current_user.admin? %>
+  						<%= link_to 'show', event %>|
+  						<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %>
+  			<% end %>
+      </td>   
+  	</tr>                					
+  <% end %>
+  <% if current_user && current_user.admin?
+    link_to 'New Event', new_event_path
+   end %>
 <!-- table height="7000" cellspacing="0" cellpadding="0" align="center" width="80%" id="menuTable">
 	<tbody>
 		<tr height="648" style="BACKGROUND-IMAGE: url(images/bgsliceheader.gif);background-size: 100%;background-origin: content;BACKGROUND-REPEAT: no-repeat" id="trMain">
