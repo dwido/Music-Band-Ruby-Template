@@ -1,0 +1,11 @@
+<p>
+    <b>Url:</b><%= app_image.url%>&nbsp;&nbsp;&nbsp;
+    <b>Thumbnail Url:</b><%= app_image.thumbnail_url%>&nbsp;&nbsp;&nbsp;
+    <b>Description:</b><%= app_image.description%><br>
+
+    <%= link_to 'Destroy Image', [app_image.gallery, app_image],
+                 :confirm => 'Are you sure?',
+                 :method => :delete %>  </p>
+    
+    <%= link_to 'Editi Image', [app_image.gallery, app_image], :action => "edit" %>  
+</p>

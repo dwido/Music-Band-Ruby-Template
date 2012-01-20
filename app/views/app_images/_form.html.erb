@@ -1,0 +1,10 @@
+<%= form_for([@gallery, @app_image]) do |f| %>
+  <div class="field">
+    <%= f.label :url %><%= f.text_field :url %><br>
+    <%= f.label :description %><%= f.text_field :description %><br>
+    <%= f.label :thumbnail_url %><%= f.text_field :thumbnail_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

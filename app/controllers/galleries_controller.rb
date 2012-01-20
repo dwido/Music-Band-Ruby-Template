@@ -14,7 +14,7 @@ class GalleriesController < ApplicationController
   # GET /galleries/1.json
   def show
     @gallery = Gallery.find(params[:id])
-
+    @app_image = @gallery.app_images.build
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @gallery }

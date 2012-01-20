@@ -10,26 +10,9 @@
 </p>
 
 <h2>Images</h2>
-<% @gallery.app_images.each do |app_image| %>
-  <p>
-    <b>Url:</b><%= app_image.url%>&nbsp;&nbsp;&nbsp;<b>Thumbnail Url:</b><%= app_image.thumbnail_url%>&nbsp;&nbsp;&nbsp;<b>Description:</b><%= app_image.description%><br>
-
-    <%= link_to 'Destroy Image', [app_image.gallery, app_image],
-                 :confirm => 'Are you sure?',
-                 :method => :delete %>  </p>
-<% end %>
+<%= render @gallery.app_images %>
 
 <h2>Add an image:</h2>
-<%= form_for([@gallery, @gallery.app_images.build]) do |f| %>
-  <div class="field">
-    <%= f.label :url %><%= f.text_field :url %><br>
-    <%= f.label :description %><%= f.text_field :description %><br>
-    <%= f.label :thumbnail_url %><%= f.text_field :thumbnail_url %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
+<%= render "app_images/form" %>
 <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
 <%= link_to 'Back', galleries_path %>
