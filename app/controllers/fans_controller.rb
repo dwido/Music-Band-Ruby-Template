@@ -42,14 +42,12 @@ class FansController < ApplicationController
   def create
     @fan = Fan.new(params[:fan])
 
-    respond_to do |format|
-      if @fan.save
-        flash[:success] = "Thank you for joining our list!"
-        redirect_to("/pages/contact/")
-      else
-        format.html { render action: "new" }
-        format.json { render json: @fan.errors, status: :unprocessable_entity }
-      end
+    if @fan.save
+      flash[:success] = "Thank you for joining our list!"
+      redirect_to("/pages/contact/")
+    else
+      flash[:error] = @fan.errors.first
+      redirect_to("/pages/contact/")
     end
   end
 

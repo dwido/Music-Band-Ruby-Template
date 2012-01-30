@@ -19,7 +19,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: layalielandalus_mysql
   pool: 5
-  timeout: 5000
+  username: dwidob
+  password: RDliyabuch9(
+  host: mysql.layalielandalus.happinessbeats.com
