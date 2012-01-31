@@ -44,8 +44,4 @@ group :test do
   gem 'faker'
 end
 
-group :production do
-  gem 'pg'
-end
-
 gem 'heroku'
