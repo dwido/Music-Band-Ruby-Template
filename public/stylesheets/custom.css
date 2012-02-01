@@ -18,7 +18,7 @@ header img {
 section {
   margin-top: 1em;
   font-size: 13px;
-  padding: 20px;
+/*  padding: 20px; */
   background: #E8DABC;
 /*  height:500px; */
   overflow:auto;
@@ -70,7 +70,7 @@ nav {
 }
 
 nav {
-  background-color: white;
+  /*background-color: white;*/
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -83,7 +83,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0.5em;
+  padding: 1em 0.96em;
 }
 
 nav ul li a {

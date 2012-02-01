@@ -2,7 +2,6 @@
 <% @bios.each do |bio| %>
   <tr>
     <td>
-
 	    <h3><%= bio.name %></h3>
 	    <%= image_tag("/images/" + bio.imagename, :class => "round snaptoright", :width => '225', :height => '238') %>
 	    <p><%= bio.content %></p>
