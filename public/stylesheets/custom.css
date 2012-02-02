@@ -203,3 +203,8 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.dotted {
+    border-top: 1px dotted #A04219;
+    padding-top: 15px;
+ }

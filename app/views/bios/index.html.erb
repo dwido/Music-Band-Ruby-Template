@@ -2,7 +2,7 @@
 <% @bios.each do |bio| %>
   <tr>
     <td>
-	    <h3><%= bio.name %></h3>
+	    <h3 class="dotted"><%= bio.name %></h3>
 	    <%= image_tag("/images/" + bio.imagename, :class => "round snaptoright", :height => '238') %>
 	    <p><%= bio.content %></p>
 	    <a target="_blank" href="<%= bio.url %>"><%= bio.url %></a>
