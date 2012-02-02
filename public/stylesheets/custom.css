@@ -18,10 +18,10 @@ header img {
 section {
   margin-top: 1em;
   font-size: 13px;
-/*  padding: 20px; */
   background: #E8DABC;
 /*  height:500px; */
   overflow:auto;
+  padding:4px 30px 5px;
 }
 
 section h1 {
@@ -70,8 +70,8 @@ nav {
 }
 
 nav {
-  /*background-color: white;*/
-  padding: 0 0.7em;
+  /*background-color: white;
+  padding: 0 0.7em;*/
   white-space: nowrap;
 }
 
@@ -83,7 +83,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 1em 0.96em;
+  padding: 1em 0.5em;
 }
 
 nav ul li a {
@@ -205,6 +205,6 @@ div.field, div.actions {
 }
 
 .dotted {
-    border-top: 1px dotted #A04219;
+    border-top: 1px dotted #D64A04;
     padding-top: 15px;
  }
