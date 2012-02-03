@@ -20,8 +20,8 @@ section {
   font-size: 13px;
   background: #E8DABC;
 /*  height:500px; */
-  overflow:auto;
   padding:4px 30px 5px;
+  height: 100%;
 }
 
 section h1 {
@@ -207,4 +207,8 @@ div.field, div.actions {
 .dotted {
     border-top: 1px dotted #D64A04;
     padding-top: 15px;
- }
+}
+ 
+#events article {
+  margin-bottom: 20px
+}

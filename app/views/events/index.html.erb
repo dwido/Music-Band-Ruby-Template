@@ -2,42 +2,21 @@
   <h2>Upcoming Shows</h2>
 
   <% @events.each do |event| %>
-  	<tr>
-  		<td align="center">
   		  <article class="dotted">
     		  <h3 style="color:#400205"><%= event.dateofevent.strftime("%A, %B %dnd, %Y") %> <%= event.timeofevent.strftime("%I") %><% if event.timeofevent.min != 0%><%= event.timeofevent.strftime(":%M") %><% end %><%= event.timeofevent.strftime("%p") %></h4>
     		  <h2 style="color:#D64A04"><%= event.title %></h3>
-    			<h4 style="color:#19368C"><%= event.address %></h4>
+    			<h4><%= event.address %></h4>
     			<h5> <%= event.content %></h5>
           <% if current_user && current_user.admin? %>
     						<%= link_to 'show', event %>|
     						<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %>
     			<% end %>
         </article>
-      </td>   
-  	</tr>                					
   <% end %>
   <% if current_user && current_user.admin?
     link_to 'New Event', new_event_path
    end %>
-<!-- table height="7000" cellspacing="0" cellpadding="0" align="center" width="80%" id="menuTable">
-	<tbody>
-		<tr height="648" style="BACKGROUND-IMAGE: url(images/bgsliceheader.gif);background-size: 100%;background-origin: content;BACKGROUND-REPEAT: no-repeat" id="trMain">
-		<td valign="top">
-						
 
-
-					</td>
-	</tr>
-	<tr verticalalign="top" style="BACKGROUND-IMAGE: url(images/Bgpartcontent.gif); BACKGROUND-REPEAT: repeat">
-		<td></td>
-	</tr>
-	<tr verticalalign="top" style="BACKGROUND-IMAGE: url(images/footer.gif); BACKGROUND-REPEAT: no-repeat">
-		<td></td>
-	</tr>
-</tbody></table -->
-
-
-      <% if current_user && current_user.admin? %>
-        <%= link_to 'New Event', new_event_path %>
-      <% end %>
+<% if current_user && current_user.admin? %>
+  <%= link_to 'New Event', new_event_path %>
+<% end %>
