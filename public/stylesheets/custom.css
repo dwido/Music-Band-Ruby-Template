@@ -21,7 +21,8 @@ section {
   background: #E8DABC;
 /*  height:500px; */
   padding:4px 30px 5px;
-  height: 100%;
+  height: auto;
+  min-height: 500px;
 }
 
 section h1 {
