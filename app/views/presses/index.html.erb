@@ -1,6 +1,8 @@
+<h2 class="heading">Press</h2>
+
 <% @presses.each do |press| %>
-    <h5><%= press.location %></td></h5>
-    <p class="info"><%= press.content %></p>
+    <h5 class="dotted"><%= press.location %></td></h5>
+    <p>"<%= press.content %>"</p>
     <strong><%= press.reviewer %></strong>
     <p><a href="<%= press.readmoreurl %>"><%= press.readmoreurl %></a></p>
     <p>

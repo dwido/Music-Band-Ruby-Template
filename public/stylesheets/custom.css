@@ -22,7 +22,7 @@ section {
 /*  height:500px; */
   padding:4px 30px 5px;
   height: auto;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 section h1 {
@@ -74,6 +74,8 @@ nav {
   /*background-color: white;
   padding: 0 0.7em;*/
   white-space: nowrap;
+  border-bottom:double;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -84,11 +86,11 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 1em 0.5em;
+  padding: 1em 0 0.5em;
 }
 
 nav ul li a {
-  padding: 0 5px;
+  /* padding: 0 5px; */
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -212,4 +214,19 @@ div.field, div.actions {
  
 #events article {
   margin-bottom: 20px
+}
+
+#presses section p {
+    /* background: none repeat scroll 0 0 #FFF6BF; */
+    border-color: #FFD324;
+    color: #514721;
+    font-style: italic;
+}
+
+.heading {
+  color: #400205;
+}
+
+.seperator {
+  padding: 0px 19px;
 }
