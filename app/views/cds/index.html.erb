@@ -17,7 +17,7 @@
       <% if current_user.admin?  %>
         <%= link_to 'Show', cd %>
         <%= link_to 'Edit', edit_cd_path(cd) %>
-        <%= link_to 'Destroy', cd, confirm: 'Are you sure?', method: :delete %></td>
+        <%= link_to 'Destroy', cd, :confirm => 'Are you sure?', :method => :delete %></td>
       <% end %>
   </tr>
 <% end %>

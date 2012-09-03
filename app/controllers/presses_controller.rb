@@ -8,7 +8,7 @@ class PressesController < ApplicationController
     
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @presses }
+      format.json { render :json => @presses }
     end
   end
 
@@ -19,7 +19,7 @@ class PressesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @press }
+      format.json { render :json => @press }
     end
   end
 
@@ -30,7 +30,7 @@ class PressesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @press }
+      format.json { render :json => @press }
     end
   end
 
@@ -46,11 +46,11 @@ class PressesController < ApplicationController
 
     respond_to do |format|
       if @press.save
-        format.html { redirect_to @press, notice: 'Press was successfully created.' }
-        format.json { render json: @press, status: :created, location: @press }
+        format.html { redirect_to @press, :notice => 'Press was successfully created.' }
+        format.json { render :json => @press, :status => :created, :location => @press }
       else
-        format.html { render action: "new" }
-        format.json { render json: @press.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @press.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -62,11 +62,11 @@ class PressesController < ApplicationController
 
     respond_to do |format|
       if @press.update_attributes(params[:press])
-        format.html { redirect_to @press, notice: 'Press was successfully updated.' }
+        format.html { redirect_to @press, :notice => 'Press was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @press.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @press.errors, :status => :unprocessable_entity }
       end
     end
   end

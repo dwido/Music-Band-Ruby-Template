@@ -6,7 +6,7 @@ class BiosController < ApplicationController
     @title = "The Band"
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @bios }
+      format.json { render :json => @bios }
     end
   end
 
@@ -17,7 +17,7 @@ class BiosController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @bio }
+      format.json { render :json => @bio }
     end
   end
 
@@ -28,7 +28,7 @@ class BiosController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @bio }
+      format.json { render :json => @bio }
     end
   end
 
@@ -44,11 +44,11 @@ class BiosController < ApplicationController
 
     respond_to do |format|
       if @bio.save
-        format.html { redirect_to @bio, notice: 'Bio was successfully created.' }
-        format.json { render json: @bio, status: :created, location: @bio }
+        format.html { redirect_to @bio, :notice => 'Bio was successfully created.' }
+        format.json { render :json => @bio, :status => :created, :location => @bio }
       else
-        format.html { render action: "new" }
-        format.json { render json: @bio.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @bio.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -60,11 +60,11 @@ class BiosController < ApplicationController
 
     respond_to do |format|
       if @bio.update_attributes(params[:bio])
-        format.html { redirect_to @bio, notice: 'Bio was successfully updated.' }
+        format.html { redirect_to @bio, :notice => 'Bio was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @bio.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @bio.errors, :status => :unprocessable_entity }
       end
     end
   end

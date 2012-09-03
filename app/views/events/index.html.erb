@@ -8,7 +8,7 @@
     			<h5> <%= event.content %></h5>
           <% if current_user && current_user.admin? %>
     						<%= link_to 'show', event %>|
-    						<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, confirm: 'are you sure?', method: :delete %>
+    						<%= link_to 'edit', edit_event_path(event) %>|<%= link_to 'destroy', event, :confirm => 'are you sure?', :method => :delete %>
     			<% end %>
         </article>
   <% end %>

@@ -7,7 +7,7 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @cds }
+      format.json { render :json => @cds }
     end
   end
 
@@ -18,7 +18,7 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @cd }
+      format.json { render :json => @cd }
     end
   end
 
@@ -29,7 +29,7 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @cd }
+      format.json { render :json => @cd }
     end
   end
 
@@ -45,11 +45,11 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       if @cd.save
-        format.html { redirect_to @cd, notice: 'Cd was successfully created.' }
-        format.json { render json: @cd, status: :created, location: @cd }
+        format.html { redirect_to @cd, :notice => 'Cd was successfully created.' }
+        format.json { render :json => @cd, :status => :created, :location => @cd }
       else
-        format.html { render action: "new" }
-        format.json { render json: @cd.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @cd.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -61,11 +61,11 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       if @cd.update_attributes(params[:cd])
-        format.html { redirect_to @cd, notice: 'Cd was successfully updated.' }
+        format.html { redirect_to @cd, :notice => 'Cd was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @cd.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @cd.errors, :status => :unprocessable_entity }
       end
     end
   end

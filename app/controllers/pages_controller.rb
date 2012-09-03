@@ -17,4 +17,7 @@ class PagesController < ApplicationController
     @galleries = Gallery.where(:main_screen => false);
   end
 
+  def dashboard
+    @cds = Cd.all
+  end
 end

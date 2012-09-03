@@ -9,7 +9,7 @@
 	    <a target="_blank" href="<%= bio.url %>"><%= bio.url %></a>
 
       <% if current_user && current_user.admin? %>
-			  <%= link_to 'Show', bio %>|<%= link_to 'Edit', edit_bio_path(bio) %>|<%= link_to 'Destroy', bio, confirm: 'Are you sure?', method: :delete %>
+			  <%= link_to 'Show', bio %>|<%= link_to 'Edit', edit_bio_path(bio) %>|<%= link_to 'Destroy', bio, :confirm => 'Are you sure?', :method => :delete %>
 			<% end %>
 	</td>
  </tr>

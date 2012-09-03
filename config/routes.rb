@@ -22,6 +22,8 @@ Lea::Application.routes.draw do
 
   get "pages/gallery"
 
+  get "pages/dashboard"
+
   resources :presses
 
   resources :microposts

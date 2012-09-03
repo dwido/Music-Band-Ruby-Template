@@ -17,10 +17,96 @@
 
 <p>
     <% if current_user && current_user.admin?  %>
-      <%= link_to 'Show', cd %>|<%= link_to 'Edit', edit_cd_path(cd) %>|<%= link_to 'Destroy', cd, confirm: 'Are you sure?', method: :delete %>
+      <%= link_to 'Show', cd %>|<%= link_to 'Edit', edit_cd_path(cd) %>|<%= link_to 'Destroy', cd, :confirm => 'Are you sure?', :method => :delete %>
     <% end %>
 </p>
 
+
+<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface" style="">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1" style="display: block; ">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none; ">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none; ">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume" style="">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar" style="width: 100%; ">
+							<div class="jp-play-bar" style="width: 0.7349331634418995%; "></div>
+
+						</div>
+					</div>
+					<div class="jp-volume-bar" style="">
+						<div class="jp-volume-bar-value" style="width: 100%; "></div>
+					</div>
+					<div class="jp-current-time">00:01</div>
+					<div class="jp-duration">04:27</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle" style="">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off" style="display: none; ">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat" style="">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none; ">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul style="display: block; ">
+					</ul>
+				</div>
+				<div class="jp-no-solution" style="display: none; ">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
 <% end %>
 
 <br />
+<div id="jquery_jplayer_1"></div>
+<script>
+
+//<![CDATA[
+$(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"Ana Mani Fiyash: أَنَا مَانِي",
+			mp3:"/audio/ana_mani_fiyash.mp3",
+		},
+		{
+			title:"Qum Tara: قم ترى",
+			mp3:"/audio/qum_tara.mp3",
+		},
+		{
+			title:"Lamouni ellee gharoo minee - لاموني الي غارو مني",
+			mp3:"/audio/lamouni.mp3",
+		},
+		{
+			title:"ellee qalboo saafee: ﻲﻟإ ﻮﺒﻠﻗ ﻲﻓﺎﺻ",
+			mp3:"/audio/ellee_qalboo_saafee.mp3",
+		},
+		{
+			title:"Ala Waḥida : الى وحيدة",
+			mp3:"/audio/ala_wahida.mp3",
+		},
+		{
+			title:"Zeen Lee 3tak LLah: الزين اللي عطاك الله",
+			mp3:"/audio/zeen.mp3",
+		}
+	], {
+		swfPath: "/javascript/",
+		supplied: "mp3",
+		wmode: "window"
+	});
+
+	//$("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
+});
+//]]>
+</script>

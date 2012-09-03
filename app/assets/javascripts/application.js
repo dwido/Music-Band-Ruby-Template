@@ -9,3 +9,5 @@
 //= require cufon-yui.js
 //= require san_serif_400-san_serif_700-san_serif_italic_400.font.js
 //= require cofuninit.js
+//= require jquery.jplayer.min.js
+//= require jplayer.playlist.min
