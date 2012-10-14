@@ -6,6 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require cufon-yui 
 //= require jplayer.playlist.min
 //= require jquery.jplayer.min
 //= require_tree .
