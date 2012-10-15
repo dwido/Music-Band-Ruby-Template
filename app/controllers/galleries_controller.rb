@@ -6,7 +6,7 @@ class GalleriesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @galleries }
+      format.json { render :json => @galleries }
     end
   end
 
@@ -17,7 +17,7 @@ class GalleriesController < ApplicationController
     @app_image = @gallery.app_images.build
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @gallery }
+      format.json { render :json => @gallery }
     end
   end
 
@@ -28,7 +28,7 @@ class GalleriesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @gallery }
+      format.json { render :json => @gallery }
     end
   end
 
@@ -44,11 +44,11 @@ class GalleriesController < ApplicationController
 
     respond_to do |format|
       if @gallery.save
-        format.html { redirect_to @gallery, notice: 'Gallery was successfully created.' }
-        format.json { render json: @gallery, status: :created, location: @gallery }
+        format.html { redirect_to @gallery, :notice => 'Gallery was successfully created.' }
+        format.json { render :json => @gallery, :status => :created, :location => @gallery }
       else
-        format.html { render action: "new" }
-        format.json { render json: @gallery.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @gallery.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -60,11 +60,11 @@ class GalleriesController < ApplicationController
 
     respond_to do |format|
       if @gallery.update_attributes(params[:gallery])
-        format.html { redirect_to @gallery, notice: 'Gallery was successfully updated.' }
+        format.html { redirect_to @gallery, :notice => 'Gallery was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @gallery.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @gallery.errors, :status => :unprocessable_entity }
       end
     end
   end

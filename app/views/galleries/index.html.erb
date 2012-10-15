@@ -17,7 +17,7 @@
     <td><%= gallery.description %></td>
     <td><%= link_to 'Show', gallery %></td>
     <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-    <td><%= link_to 'Destroy', gallery, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', gallery, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

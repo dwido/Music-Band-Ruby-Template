@@ -5,7 +5,7 @@
 <div id='coin-slider'>
   <% if @gallery !=nil %>
     <% @gallery.app_images.each do |main_image| %>
-      <a><img src='<%= main_image.url %>' ></a>
+      <div><img src='<%= main_image.url %>' ></div>
     <% end %>
   <% end %>
 </div>
