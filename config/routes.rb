@@ -24,6 +24,10 @@ Lea::Application.routes.draw do
 
   get "pages/dashboard"
 
+  get "pages/sepharadic_music"
+
+  get "pages/north_african_drumming"
+
   resources :presses
 
   resources :microposts
