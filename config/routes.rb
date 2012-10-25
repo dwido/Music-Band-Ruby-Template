@@ -22,6 +22,8 @@ Lea::Application.routes.draw do
 
   get "pages/gallery"
 
+  get "pages/education"
+
   get "pages/dashboard"
 
   get "pages/sepharadic_music"

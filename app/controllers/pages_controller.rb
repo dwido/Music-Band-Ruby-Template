@@ -21,6 +21,9 @@ class PagesController < ApplicationController
     @cds = Cd.all
   end
 
+  def dashboard
+  end
+
   def sepharadic_music
     @title = "Sephardic Jewish Music New York"
   end
