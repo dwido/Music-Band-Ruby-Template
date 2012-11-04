@@ -1,0 +1,8 @@
+def up
+    content :events, :content, :text
+end
+def down
+    # This might cause trouble if you have strings longer
+    # than 255 characters.
+    content :events, :content, :string
+end
