@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120119200942) do
+ActiveRecord::Schema.define(:version => 20121104200942) do
 
   create_table "app_images", :force => true do |t|
     t.string   "url"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(:version => 20120119200942) do
     t.time     "timeofevent"
     t.string   "townstate"
     t.string   "address"
-    t.string   "content"
+    t.text     "content",     :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
