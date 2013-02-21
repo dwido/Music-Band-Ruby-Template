@@ -3,7 +3,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = Event.where('dateofevent > ?', DateTime.now.beginning_of_day)
     @title = "Upcoming Events"
 
     respond_to do |format|
