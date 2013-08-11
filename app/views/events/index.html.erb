@@ -2,7 +2,7 @@
 
   <% @events.each do |event| %>
   		  <article class="dotted">
-    		  <h3 style="color:#400205"><%= event.dateofevent.strftime("%A, %B %dnd, %Y") %> <%= event.timeofevent.strftime("%I") %><% if event.timeofevent.min != 0%><%= event.timeofevent.strftime(":%M") %><% end %><%= event.timeofevent.strftime("%p") %></h4>
+    		  <h3 style="color:#400205"><%= event.dateofevent.strftime("%A, %B %d, %Y") %> <%= event.timeofevent.strftime("%I") %><% if event.timeofevent.min != 0%><%= event.timeofevent.strftime(":%M") %><% end %><%= event.timeofevent.strftime("%p") %></h4>
     		  <h2 style="color:#D64A04"><%= event.title %></h3>
     			<h4><%= event.address %></h4>
     			<h5> <%= event.content %></h5>
